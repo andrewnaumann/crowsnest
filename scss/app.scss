@@ -148,3 +148,76 @@ h2 {
   padding: 5px;
   max-width: 400px;
 }
+
+.d-ib {
+  display: inline-block;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-1-medium {
+  @include breakpoint(medium) {
+      flex-grow: 1;
+  }
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tc-small {
+  text-align: center;
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+}
+
+.mw-32px {
+  max-width: 32px;
+}
+
+.w-25-small {
+  width: 25%;
+  @include breakpoint(medium) {
+    width: auto;
+  }
+}
+
+.w-50-small {
+  width: 50%;
+  @include breakpoint(medium) {
+    width: auto;
+  }
+}
+
+// Turn hamburger black
+.menu-icon::after {
+    background: $accentColor;
+    box-shadow: 0 7px 0 $accentColor,0 14px 0 $accentColor;
+}
+
+.menu-link {
+  color: #000;
+
+  &:hover {
+    color: $accentColor;
+  }
+}
