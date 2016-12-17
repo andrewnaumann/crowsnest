@@ -4,6 +4,9 @@
 @import 'foundation';
 @import 'motion-ui';
 
+@import '../node_modules/slick-carousel/slick/slick.css';
+@import '../node_modules/slick-carousel/slick/slick-theme.css';
+
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
