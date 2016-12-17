@@ -50,6 +50,7 @@
 @include motion-ui-animations;
 
 $accentColor: #FDAA68;
+$charcoal: #3F3F3F;
 
 h1,h2,h3 {
   font-weight: 600;
@@ -63,9 +64,38 @@ h1,h2,h3 {
   box-shadow: 0px 2px 1px rgba(0,0,0,.2);
 }
 
-.white-bg {
+.bg-white {
   background: $white;
 }
+
+.white {
+  color: $white;
+}
+
+.pv1 {
+  padding: 1rem 0;
+}
+
+.ma0 {
+  margin: 0;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.bg-charcoal {
+  background: $charcoal;
+}
+
+.dark-grey {
+  color: $dark-gray;
+}
+
+.tracked {
+  letter-spacing: .1em;
+}
+
 
 .quote-image {
   // max-height: 320px;
@@ -136,11 +166,15 @@ h2 {
   padding-top: 5rem;
 }
 
-.shade-50 {
+.shade-50-small {
   height: 80vh;
-  width: 50%;
+  width: 100%;
   position: absolute;
   background: rgba(0,0,0,.5);
+
+  @include breakpoint(medium) {
+    width: 50%;
+  }
 }
 
 .frame {
@@ -206,6 +240,10 @@ h2 {
   @include breakpoint(medium) {
     width: auto;
   }
+}
+
+.ttu {
+  text-transform: uppercase;
 }
 
 // Turn hamburger black

@@ -22,18 +22,17 @@
 
             <!-- Menu -->
           <ul class="vertical menu">
-            <li><a href="#">Foundation</a></li>
-            <li><a href="#">Dot</a></li>
-            <li><a href="#">ZURB</a></li>
-            <li><a href="#">Com</a></li>
-            <li><a href="#">Slash</a></li>
-            <li><a href="#">Sites</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
 
         </div>
         <div class="off-canvas-content" data-off-canvas-content>
-          <header class="row columns">
-            <div class="title-bar flex flex-align-center">
+          <div data-sticky-container>
+          <header class="bg-white sticky" data-sticky data-margin-top="0" style="width:100%">
+            <div class="title-bar row columns flex flex-align-center" >
               <div class="show-for-small-only w-25-small">
                 <img class="mw-32px" src="img/phone_icon.png" alt="">
                 <img class="mw-32px" src="img/location_icon.png" alt="">
@@ -45,7 +44,7 @@
 
               <div class="w-25-small tr">
                 <button class="menu-icon show-for-small-only" type="button" data-open="offCanvasRight"></button>
-                <ul class="menu align-right hide-for-small-only">
+                <ul class="menu hide-for-small-only">
                   <li><a class="menu-link" href="#">Home</a></li>
                   <li><a class="menu-link" href="#">Menu</a></li>
                   <li><a class="menu-link" href="#">News</a></li>
@@ -56,8 +55,114 @@
             </div>
           </header>
         </div>
+
+          <div id="slick-bacon" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+            <div class="slide slide-1">
+              <div class="row">
+                <div class="small-12 medium-6 large-4 columns hero-content-container">
+                  <div class="hero-content">
+                    <h1 class="tracked">Crow's Nest</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-2">
+              <div class="row">
+                <div class="small-12 medium-6 large-4 columns hero-content-container">
+                  <div class="hero-content">
+                    <h1 class="tracked">Rickard Royal</h1>
+                    <h3>Fried egg, bacon, cheddar cheese,sausage gravy, brioche onion roll</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-3">
+              <div class="row">
+                <div class="small-12 medium-6 large-4 columns hero-content-container">
+                  <div class="hero-content">
+                    <h1 class="tracked">French Toast!</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row section">
+            <div class="small-12 medium-4 columns text-center">
+              <img class="quote-image" src="img/sandwich.jpg" alt="">
+              <h2 class="tracked">Amazing Food</h2>
+              <p>
+                Amazing, memorable food.
+                Original and options for every kind of diet.
+              </p>
+            </div>
+            <div class="small-12 medium-4 columns text-center">
+              <img class="quote-image" src="img/coffee.jpg" alt="">
+              <h2 class="tracked">Great Coffee</h2>
+              <p>
+                Great coffee with great friends.
+                You can't go wrong with any of their drinks.
+              </p>
+            </div>
+            <div class="small-12 medium-4 columns text-center">
+              <img class="quote-image" src="img/facade.jpg" alt="">
+              <h2 class="tracked">Community</h2>
+              <p>
+                There is a reason this place is always busy.
+                Great food and a perfect atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="our-story">
+      <div class="shade-50-small"></div>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <div class="story-content">
+            <h1 class="ttu tracked">Our Story</h1>
+            <p>
+              A locally owned upscale diner featuring a full breakfast,
+              lunch and dinner menu all day. Check out our unique vegetarian
+              and vegan options as well as our many other specialties!
+            </p>
+          </div>
+        </div>
+        <div class="hide-for-small-only medium-6 columns">
+          <div class="story-image">
+            <div class="frame">
+              <img src="img/menu.jpg" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="mail-section section" style="background-image: url(img/wall_texture.jpg)">
+    <div class="row">
+      <div class="small-12 columns text-center white ttu">
+        <h1 class="tracked">Join our mailing list</h1>
+        <h3 class="mb2 tracked">And never miss an update</h3>
+        <div class="row">
+          <div class="small-12 medium-8 medium-push-2 columns"
+            <form>
+              <input type="email" name="email" value="" placeholder="Email Address">
+              <button class="button" type="button" name="button">Sign me up!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-charcoal">
+    <div class="row columns tc">
+      <p class="white dark-grey pv1 ma0">© CROW'S NEST RESTAURANT | Designed by KzooFirst</p>
+    </div>
+  </footer>
+
 
 
 
