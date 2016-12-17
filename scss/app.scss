@@ -249,6 +249,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.bg-gray-hover:hover {
+  background: $dark-gray;
+}
+
 // Turn hamburger black
 .menu-icon::after {
     background: $accentColor;
