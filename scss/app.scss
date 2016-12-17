@@ -4,8 +4,8 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import '../node_modules/slick-carousel/slick/slick.css';
-@import '../node_modules/slick-carousel/slick/slick-theme.css';
+@import 'slick/slick';
+@import 'slick/slick-theme';
 
 @include foundation-global-styles;
 @include foundation-grid;
