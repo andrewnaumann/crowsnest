@@ -1,6 +1,9 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
 var bs = require('browser-sync').create();
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
@@ -13,6 +16,17 @@ gulp.task('browser-sync', ['sass'], function() {
             baseDir: "./"
         }
     });
+});
+
+gulp.task('scripts', function() {
+  return gulp.src(['bower_components/what-input/what-input.min.js',
+  'bower_components/foundation-sites/dist/foundation.js',
+  'node_modules/slick-carousel/slick/slick.min.js', 'js/custom.js'])
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('./js'))
+    .pipe(rename('app.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js'));
 });
 
 gulp.task('sass', function() {
