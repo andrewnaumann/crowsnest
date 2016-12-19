@@ -151,6 +151,22 @@ h2 {
   }
 }
 
+.hero {
+  height: 40vh;
+}
+
+.f2 {
+  @include breakpoint(medium) {
+    font-size: 40px
+  }
+}
+
+.f3 {
+  @include breakpoint(medium) {
+    font-size: 31px
+  }
+}
+
 .our-story {
   background: url('../img/diningroom.jpg');
   background-position: center;
@@ -251,6 +267,10 @@ h2 {
 
 .bg-gray-hover:hover {
   background: $dark-gray;
+}
+
+.mb3 {
+  margin-bottom: 3rem;
 }
 
 // Turn hamburger black
