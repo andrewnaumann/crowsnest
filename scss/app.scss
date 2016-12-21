@@ -167,12 +167,6 @@ h2 {
   }
 }
 
-.our-story {
-  background: url('../img/diningroom.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
 .story-content {
   padding-top: 5rem;
   height: 80vh;
@@ -285,4 +279,8 @@ h2 {
   &:hover {
     color: $accentColor;
   }
+}
+
+.mt-0 {
+  margin-top: 0;
 }
